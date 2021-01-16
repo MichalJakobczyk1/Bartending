@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 465.304 465.304" style="enable-background:new 0 0 465.304 465.304;" xml:space="preserve"
+	 >
+	 <style type="text/css">
+
+	 @keyframes glassLeftAppear {
+  0%{
+    transform: translateX(-200%);
+	opacity: 0;
+  }
+  100% {
+    transform: translateX(0%);
+	opacity: 1;
+  }
+}
+
+@keyframes glassRightAppear {
+  0%{
+    transform: translateX(200%);
+	opacity: 0;
+  }
+  100%{
+    transform: translateX(0%);
+	opacity: 1;
+  }
+}
+
+@keyframes glassPop {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.glass__left {
+  animation: glassLeftAppear 2s 2s ease-in-out both;
+}
+
+.glass__right {
+  animation: glassRightAppear 2s 2s ease-in-out both;
+}
+
+.glass__pop {
+  animation: glassPop 0.5s 4s ease-in-out both;
+}
+
+	 </style>
+<g>
+	<g>
+		<!-- bąbelki lewo -->
+			<rect class="glass__left" style="fill: rgb(245,0,182);" x="148.501" y="163.646" transform="matrix(0.2021 -0.9794 0.9794 0.2021 -43.2314 290.2288)" width="16.001" height="16.001"/>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<rect class="glass__left" style="fill: rgb(245,0,182);" x="110.781" y="188.494" transform="matrix(0.2021 -0.9794 0.9794 0.2021 -97.6631 273.1141)" width="16.001" height="16.001"/>
+	</g>
+</g>
+<g>
+	<g>
+		
+			<rect class="glass__left" style="fill: rgb(245,0,182);" x="119.944" y="223.072" transform="matrix(0.2021 -0.9794 0.9794 0.2021 -124.2163 309.6789)" width="16.001" height="16.001"/>
+	</g>
+</g>
+<g>
+	<g>
+	<!-- szkło lewo -->
+		<path class="glass__left" style="fill: rgb(245,0,182);" d="M234.584,29.168L93.896,0l-10.36,51.176C74.88,93.128,70.752,135.68,71.024,177.76l0.6,18.96
+			c1.504,45.464,7.888,90.608,19.36,134.44l-17.48,84.736l-31.224-6.472l-3.256,15.672l78.144,16.2l3.248-15.672l-31.248-6.48
+			l17.4-84.336c56.088-71.848,95.6-154.568,114.32-239.352l0.576-2.664c0.968-4.208,2.184-9.6,2.776-12.48l0.28-1.416l0.592-2.704
+			l-0.056,0.04L234.584,29.168z M102.84,313.28c-9.792-41.496-15.104-84.088-15.824-126.896l113.528-74.824
+			C182.032,182.64,148.568,251.728,102.84,313.28z M208.56,77.112c-0.808,3.904-1.664,7.808-2.56,11.688L86.944,167.272
+			c0.432-37.568,4.552-75.464,12.264-112.888l7.176-35.448l109.36,22.672L208.56,77.112z"/>
+	</g>
+</g>
+<g>
+	<g>
+	<!-- bąbelki prawo -->
+		<rect class="glass__right" style="fill: rgb(245,0,182);" x="300.822" y="187.668" transform="matrix(0.9794 -0.2021 0.2021 0.9794 -33.171 66.4479)" width="16" height="16.001"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect class="glass__right" style="fill: rgb(245,0,182);" x="338.561" y="212.489" transform="matrix(0.9794 -0.2019 0.2019 0.9794 -37.3798 74.512)" width="16" height="16"/>
+	</g>
+</g>
+<g>
+	<g>
+		<rect class="glass__right" style="fill: rgb(245,0,182);" x="329.357" y="247.082" transform="matrix(0.9794 -0.2019 0.2019 0.9794 -44.5539 73.3664)" width="16" height="16"/>
+	</g>
+</g>
+<g>
+	<g>
+	<!-- szkło prawo -->
+		<path class="glass__right" style="fill: rgb(245,0,182);" d="M423.024,433.424l-31.224,6.48l-17.408-84.408c11.52-43.936,18.08-89.192,19.584-134.768l-0.24-18.96
+			c0.272-42.072-3.592-84.624-12.232-126.544L371.28,24L230.64,53.184L232.272,61c0.44,2.16,10.68,52.08,12.104,58.272l0.032,0.096
+			c17.656,84.352,56.128,164.872,114.32,239.384l17.408,84.4l-31.248,6.48l3.248,15.672l78.144-16.208L423.024,433.424z
+			 M249.576,65.608L358.92,42.936l7.176,35.488c7.712,37.4,11.824,75.288,12.264,112.84l-119-78.424
+			C257.56,104.416,252.936,81.96,249.576,65.608z M264.504,135.392l73.784,48.624l40,26.368
+			c-0.712,42.824-6.024,85.424-15.824,126.92C315.04,273.792,282.16,206.016,264.504,135.392z"/>
+	</g>
+</g>
+<g>
+	<g>
+	<!-- środek -->
+		<rect class="glass__pop" style="fill: rgb(245,0,182);" x="200.16" y="201.416" width="24" height="16" />
+	</g>
+</g>
+<g>
+	<g>
+		<rect style="fill: rgb(245,0,182);" x="248.16" y="241.416" width="16" height="24" class="glass__pop" />
+	</g>
+</g>
+<g>
+	<g>
+		<rect style="fill: rgb(245,0,182);" x="203.24" y="237.409" transform="matrix(0.7061 -0.7081 0.7081 0.7061 -109.0629 228.0428)" width="33.904" height="16" class="glass__pop" />
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>

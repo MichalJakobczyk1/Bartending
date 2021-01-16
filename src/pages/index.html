@@ -20,21 +20,28 @@
     <!-- uncomment the line below to enable PWA  -->
     <!-- <link rel="manifest" href="manifest.json" /> -->
   </head>
-  <body class="body">
+  <body class="body body--preload">
     <nav class="navigation">
-      <ul class="navigation__list">
-        <li class="navigation__list-item"></li>
-        <li class="navigation__list-item"></li>
-        <li class="navigation__list-item"></li>
-        <li class="navigation__list-item"></li>
-        <li class="navigation__list-item"></li>
-        <li class="navigation__list-item"></li>
+      <button class="navigation__menu navigation__menu--js"></button>
+      <ul class="navigation__list navigation__list--js">
+        <a href="#about"><li class="navigation__list-item">About Me</li></a>
+        <a href="#history"><li class="navigation__list-item">History</li></a>
+        <a href="#introduction"
+          ><li class="navigation__list-item">Introduction</li></a
+        >
+        <a href="#basics"
+          ><li class="navigation__list-item">Alcohols & Cocktails</li></a
+        >
+        <a href="#bars"><li class="navigation__list-item">Cocktail Bars</li></a>
+        <a href="#footer"
+          ><li class="navigation__list-item">Info & Contact</li></a
+        >
       </ul>
     </nav>
     <main class="main">
-      <section class="section section--welcome">
-        <svg></svg>
-        <h1 class="section__h1"></h1>
+      <section class="section section--welcome" id="start">
+        <h1 class="section__h1 section__h1--welcome">Hello, i want to introduce you to the world of bartending</h1>
+        <img class="section__image" src="../assets/img/champagne.svg" alt="champagne glasses" />
       </section>
       <section class="section section--about">
         <img class="section__image section__image--hero" />
@@ -45,7 +52,7 @@
           <p class="section__article-paragraph"></p>
         </article>
       </section>
-      <section class="section section--history">
+      <section class="section section--history" id="history">
         <svg></svg>
         <article class="section__article section__article--history">
           <h2 class="section__h2"></h2>
@@ -56,7 +63,7 @@
           <a class="section__container--history-link"></a>
         </div>
       </section>
-      <section class="section section--introduction">
+      <section class="section section--introduction" id="introduction">
         <h2 class="section__h2"></h2>
         <div class="section__container section__container--introduction">
           <div class="section__container-tile"></div>
@@ -70,7 +77,7 @@
           <div class="section__container-tile"></div>
         </div>
       </section>
-      <section class="section section--basics">
+      <section class="section section--basics" id="basics">
         <h2 class="section__h2"></h2>
         <article class="section__article section__article--basics">
           <h3 class="section__article-h3"></h3>
@@ -145,7 +152,7 @@
           </div>
         </article>
       </section>
-      <section class="section section--cocktail-bars">
+      <section class="section section--cocktail-bars" id="bars">
         <h2 class="section__h2"></h2>
         <div class="section__tile section__tile--bars">
           <h3 class="section__h3"></h3>
@@ -161,19 +168,31 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
       <div class="footer__container">
-      <div class="footer__socials">
-        <a class="footer__socials-link"></a>
-        <a class="footer__socials-link"></a>
-      </div>
-      <div class="footer__pages">
-        <a class="footer__pages-link"></a>
-        <a class="footer__pages-link"></a>
-        <a class="footer__pages-link"></a>
-      </div>
+        <div class="footer__socials">
+          <a class="footer__socials-link"></a>
+          <a class="footer__socials-link"></a>
+        </div>
+        <div class="footer__pages">
+          <a class="footer__pages-link"></a>
+          <a class="footer__pages-link"></a>
+          <a class="footer__pages-link"></a>
+        </div>
         <p class="footer__paragraph"></p>
         <a class="footer__mail"></a>
+      </div>
+      <div>
+        Icons made by
+        <a
+          href="https://www.flaticon.com/free-icon/champagne_701252?term=champagne+glass&page=2&position=25&related_id=701252&origin=search"
+          title="Vitaly Gorbachev"
+          >Vitaly Gorbachev</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon"
+          >www.flaticon.com</a
+        >
       </div>
     </footer>
   </body>
