@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" 
 	 viewBox="0 0 465.304 465.304" style="enable-background:new 0 0 465.304 465.304;" xml:space="preserve"
 	 >
 	 <style type="text/css">
@@ -37,15 +37,15 @@
 }
 
 .glass__left {
-  animation: glassLeftAppear 2s 2s ease-in-out both;
+  animation: glassLeftAppear 2s 1s ease-in-out both;
 }
 
 .glass__right {
-  animation: glassRightAppear 2s 2s ease-in-out both;
+  animation: glassRightAppear 2s 1s ease-in-out both;
 }
 
 .glass__pop {
-  animation: glassPop 0.5s 4s ease-in-out both;
+  animation: glassPop 0.5s 3s ease-in-out both;
 }
 
 	 </style>

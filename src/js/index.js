@@ -11,9 +11,11 @@ window.addEventListener("load", (event) => {
     document.body.classList.remove("body--preload");
   });
 
-const buttonMenu = document.querySelector(".navigation__menu--js");
+const buttonMenu = document.querySelector(".navigation__menu");
 const menuList = document.querySelector(".navigation__list--js");
 
 buttonMenu.addEventListener("click", () => {
   menuList.classList.toggle("navigation__list--open");
+  buttonMenu.classList.toggle("navigation__menu");
+  buttonMenu.classList.toggle("navigation__menu--open");
 });
