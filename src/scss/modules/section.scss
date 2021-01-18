@@ -9,16 +9,27 @@
   &--history {
     display: grid;
     grid-template-areas:
-      "image image image"
-      "article article article"
-      "link link link";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 70vh 1fr 10vh;
+    "header header header header"
+      "image image image image"
+      "article article article article"
+      "link link link link";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 70vh 1fr 10vh;
   }
   &__article {
+    &-header {
+      &--history {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $secondaryColor;
+        color: $mainColor;
+        height: 50px;
+        padding: 0 16px;
+      }
+    }
     &--history {
       grid-area: article;
-      text-align: center;
     }
   }
   &__container {
@@ -81,12 +92,29 @@
   }
   &__h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 36px;
+    &--history {
+      grid-area: header;
+      margin: 32px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   &__h3 {
+    font-size: 24px;
+    &--history {
+     
+    }
     &--link {
       grid-area: heading;
       text-align: center;
+      margin: 16px 0;
     }
+  }
+  &__paragraph {
+    margin: 16px 16px;
+    text-align: justify;
+    font-size: 18px;
   }
 }
