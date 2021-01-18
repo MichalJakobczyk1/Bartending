@@ -1,5 +1,6 @@
 .section {
   min-height: 100vh;
+  margin: 128px 0;
   &--welcome {
     display: flex;
     flex-direction: column;
@@ -9,7 +10,7 @@
   &--history {
     display: grid;
     grid-template-areas:
-    "header header header header"
+      "header header header header"
       "image image image image"
       "article article article article"
       "link link link link";
@@ -71,6 +72,12 @@
         }
       }
     }
+    &-tile {
+      margin: 32px 0;
+    }
+    &--introduction {
+      text-align: center;
+    }
   }
   &__image {
     &--welcome {
@@ -81,14 +88,14 @@
     &--history {
       grid-area: image;
     }
+    &--introduction {
+    }
   }
   &__h1 {
-    &--welcome {
-      text-align: center;
-      margin: 144px 8px 40px;
-      font-size: 42px;
-      animation: headerAppear 1s 0.5s ease-in-out both;
-    }
+    text-align: center;
+    margin: 24px 8px 40px;
+    font-size: 42px;
+    animation: headerAppear 1s 0.5s ease-in-out both;
   }
   &__h2 {
     text-align: center;
@@ -104,17 +111,41 @@
   &__h3 {
     font-size: 24px;
     &--history {
-     
     }
     &--link {
       grid-area: heading;
       text-align: center;
       margin: 16px 0;
     }
+    &--introduction {
+      color: $mainColor;
+      background-color: $secondaryColor;
+      width: max-content;
+      padding: 8px;
+      border-radius: 15px;
+    }
+    &-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
   }
   &__paragraph {
     margin: 16px 16px;
     text-align: justify;
     font-size: 18px;
+    &-list {
+      margin-block-start: 0;
+      margin-block-end: 0;
+      margin-inline-start: 0;
+      margin-inline-end: 0;
+      padding-inline-start: 0;
+      margin: 0 34px;
+      text-align: justify;
+      font-size: 18px;
+      &-item {
+        margin: 8px 0;
+      }
+    }
   }
 }
