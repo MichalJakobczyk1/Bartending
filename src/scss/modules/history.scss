@@ -1,0 +1,87 @@
+.section {
+  &--history {
+    display: grid;
+    grid-template-areas:
+      "header header header header"
+      "image image image image"
+      "article article article article"
+      "link link link link";
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 10vh 70vh 1fr 10vh;
+  }
+  &__article {
+    &-header {
+      &--history {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: $secondaryColor;
+        color: $mainColor;
+        height: 50px;
+        padding: 0 16px;
+      }
+    }
+    &--history {
+      grid-area: article;
+    }
+  }
+  &__container {
+    &--history {
+      grid-area: link;
+      margin: 32px 0;
+      display: grid;
+      grid-template-areas:
+        "heading heading heading"
+        "link1 link2 link3";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 40px 40px;
+      column-gap: 16px;
+      row-gap: 16px;
+      margin: 0 16px;
+      &-link {
+        border: solid 2px $secondaryColor;
+        border-radius: 8px;
+        padding: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out,
+          border 0.5s ease-in-out;
+        &-1 {
+          grid-area: link1;
+        }
+        &-2 {
+          grid-area: link2;
+        }
+        &-3 {
+          grid-area: link3;
+        }
+        &:hover {
+          color: $mainColor;
+          background-color: $secondaryColor;
+          border: solid 2px $mainColor;
+        }
+      }
+    }
+  }
+  &__image {
+    &--history {
+      grid-area: image;
+    }
+  }
+  &__h2 {
+    &--history {
+      grid-area: header;
+      margin: 32px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &--link {
+      grid-area: heading;
+      text-align: center;
+      margin: 16px 0;
+    }
+  }
+}

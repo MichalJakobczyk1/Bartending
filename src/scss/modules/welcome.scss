@@ -1,0 +1,15 @@
+.section {
+    &--welcome {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      &__image {
+        &--welcome {
+            width: 100vw;
+            height: 300px;
+            margin: 48px 0;
+          }
+      }
+}

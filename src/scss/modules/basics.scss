@@ -1,0 +1,14 @@
+.section {
+  &__article {
+    &--basics {
+      display: grid;
+      grid-template-areas:
+        "bottle bottle bottle"
+        "heading heading heading"
+        "content content content"
+        "recipe recipe recipe";
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 20vh 10vh 1fr 30vh;
+    }
+  }
+}
