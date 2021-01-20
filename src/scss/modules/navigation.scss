@@ -79,14 +79,8 @@
     }
   }
   &__list {
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0;
-    margin-inline-end: 0;
-    padding-inline-start: 0;
     display: flex;
     flex-direction: column;
-    list-style-type: none;
     font-weight: 500;
     background: transparent;
     transform: translateX(200%);

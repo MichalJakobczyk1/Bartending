@@ -33,17 +33,17 @@
   }
   &__paragraph {
     &-list {
-      margin-block-start: 0;
-      margin-block-end: 0;
-      margin-inline-start: 0;
-      margin-inline-end: 0;
-      padding-inline-start: 0;
-      margin: 0 34px;
+      margin: 0 16px;
       text-align: justify;
       font-size: 18px;
       &-item {
         margin: 8px 0;
       }
+    }
+  }
+  &__image {
+    &--introduction {
+      margin: 24px 0 0;
     }
   }
 }

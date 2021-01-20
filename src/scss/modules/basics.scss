@@ -1,14 +1,49 @@
 .section {
   &__article {
     &--basics {
-      display: grid;
-      grid-template-areas:
-        "bottle bottle bottle"
-        "heading heading heading"
-        "content content content"
-        "recipe recipe recipe";
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-rows: 20vh 10vh 1fr 30vh;
+      margin: 64px 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
+    &--wine {
+      margin: 96px 0;
+    }
+  }
+  &__article {
+    &-bottom {
+      display: grid;
+      grid-template-areas: "cocktail text";
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 50vh;
+      &-text {
+        grid-area: text;
+        display: flex;
+        flex-direction: row;
+      }
+
+      &-list {
+        text-align: center;
+      }
+      &-paragraph {
+        text-align: justify;
+        margin: 16px 16px 8px 0;
+      }
+    }
+  }
+  &__image {
+    &--cocktail {
+      grid-area: cocktail;
+      margin: auto;
+    }
+    &--method {
+      width: 100%;
+      height: 48px;
+      margin: 8px 0;
+    }
+  }
+  &__h4 {
+    text-align: center;
   }
 }
