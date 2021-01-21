@@ -1,0 +1,31 @@
+.footer {
+  &__container {
+    height: 35vh;
+    background: $secondaryColor;
+    color: $mainColor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__socials {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  &__pages {
+  }
+  &__credits {
+  }
+  &__paragraph {
+    font-size: 16px;
+    margin: 8px 8px;
+    text-align: center;
+    &--name {
+      font-size: 24px;
+    }
+  }
+  &__link {
+    text-decoration: underline;
+  }
+}

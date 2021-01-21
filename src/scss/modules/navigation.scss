@@ -1,13 +1,13 @@
 .navigation {
   position: fixed;
-  left: 0;
+  right: 0;
   top: 0;
   width: 100vw;
   height: 70px;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  background-color: rgb(36, 1, 59,0.9);
+  background-color: rgb(36, 1, 59, 0.9);
   &__menu {
     background-color: $secondaryColor;
     height: 6px;
@@ -94,8 +94,7 @@
     }
     &-item {
       text-align: center;
-      margin: 0 8px;
-      background: rgb(36, 1, 59,0.9);
+      background: rgb(36, 1, 59, 0.9);
     }
   }
 }
