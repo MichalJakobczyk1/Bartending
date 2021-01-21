@@ -11,15 +11,13 @@
   }
   &__article {
     &-header {
-      &--history {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: $secondaryColor;
-        color: $mainColor;
-        height: 50px;
-        padding: 0 16px;
-      }
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: $secondaryColor;
+      color: $mainColor;
+      height: 50px;
+      padding: 0 16px;
     }
     &--history {
       grid-area: article;

@@ -1,2 +1,11 @@
 $mainColor: rgb(36, 1, 59);
 $secondaryColor: rgb(245, 0, 182);
+
+:root {
+  --translate-goose: translateY(-120%);
+  --translate-sababa: translateY(-120%);
+  --translate-mercy: translateY(-120%);
+  --opacity-goose: 0;
+  --opacity-sababa: 0;
+  --opacity-mercy: 0;
+}

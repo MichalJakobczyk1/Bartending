@@ -10,7 +10,7 @@
 @import "./modules/basics.scss";
 @import "./modules/bars.scss";
 @import "./modules/footer.scss";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 
 ul {
   margin-block-start: 0;
@@ -56,7 +56,7 @@ button:active {
   background: $mainColor;
   color: $secondaryColor;
   min-height: 100vh;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   &--preload * {
     -webkit-transition: none !important;
     -moz-transition: none !important;

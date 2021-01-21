@@ -1,0 +1,118 @@
+.section {
+  &__article {
+    &--bars {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+  &__button {
+    background: transparent;
+  }
+  &__tile {
+    height: 40vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 500;
+    font-size: 28px;
+    color: $mainColor;
+    position: relative;
+    &--goose {
+      &::before {
+        content: "Zabłocie 23/24 Kraków";
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 40px;
+        color: $secondaryColor;
+        -webkit-text-stroke: 1px $mainColor;
+        z-index: 0;
+        background: url("/src/assets/img/theGoose.png") center center / cover
+          no-repeat;
+        transform: var(--translate-goose);
+        transition: transform 1s ease-in-out;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+    }
+    &--sababa {
+      &::before {
+        content: "Szeroka 2 Kraków";
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 40px;
+        color: $secondaryColor;
+        -webkit-text-stroke: 1px $mainColor;
+        z-index: 0;
+        background: url("/src/assets/img/sababa.png") center center / cover
+          no-repeat;
+        transform: var(--translate-sababa);
+        transition: transform 1s ease-in-out;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+    }
+    &--mercy {
+      &::before {
+        content: "Straszewskiego 28 Kraków";
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        font-size: 32px;
+        color: $secondaryColor;
+        -webkit-text-stroke: 1px $mainColor;
+        z-index: 0;
+        background: url("/src/assets/img/mercyBrown.png") center center / cover
+          no-repeat;
+        transform: var(--translate-mercy);
+        transition: transform 1s ease-in-out;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+    }
+  }
+  &__h3 {
+    &--bars {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  &__h2 {
+    &--bars {
+      margin: 0 8px 16px;
+    }
+  }
+  &__link {
+    &--goose {
+      opacity: var(--opacity-goose);
+    }
+    &--sababa {
+      opacity: var(--opacity-sababa);
+    }
+    &--mercy {
+      opacity: var(--opacity-mercy);
+    }
+    &--bars {
+      z-index: 1;
+      margin: 0 0 32px;
+      font-weight: 500;
+      font-size: 36px;
+      color: $secondaryColor;
+      -webkit-text-stroke: 1px $mainColor;
+      transition: opacity 0.5s 1s ease-in-out;
+    }
+  }
+}
