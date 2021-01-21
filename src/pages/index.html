@@ -69,7 +69,7 @@
           </h3>
           <img src="../assets/img/history.svg" alt="book with feather icon" />
         </header>
-        <p class="section__paragraph">
+        <p class="section__paragraph section__paragraph--history">
           The art of bartending has been around for thousands of years. While
           it has evolved drastically from when the profession first began, it
           still consists of the same goal – serve alcohol while keeping
@@ -81,7 +81,7 @@
           <h3 class="section__h3 section__h3--history">Ancient Times</h3>
           <img src="../assets/img/ancient.svg" alt="greek pantheon icon" />
         </header>
-        <p class="section__paragraph">
+        <p class="section__paragraph section__paragraph--history">
           Bartending can be traced back to ancient times in Rome, Greece, and
           Asia. In fact, there is a recorded history of bartending dating back
           to when Julius Caesar ruled Ancient Rome. Along popularly traveled
@@ -98,7 +98,7 @@
           <h3 class="section__h3 section__h3--history">Middle Ages</h3>
           <img src="../assets/img/middleAge.svg" alt="castle icon" />
         </header>
-        <p class="section__paragraph">
+        <p class="section__paragraph section__paragraph--history">
           During the Middle Ages, bartending was a full profession. Bartenders
           were usually innkeepers or women who would brew their own drinks,
           such as wine and mead. During the 15th Century, these bartenders
@@ -113,7 +113,7 @@
           <h3 class="section__h3 section__h3--history">New World</h3>
           <img src="../assets/img/newWorld.svg" alt="pisa tower icon" />
         </header>
-        <p class="section__paragraph">
+        <p class="section__paragraph section__paragraph--history">
           With the discovery of the New World, Europeans made sure to bring
           over the practice of bartending. Similar to the drinking culture in
           England, taverns and pubs opened up in the Colonies. It wasn’t until
@@ -130,7 +130,7 @@
           <h3 class="section__h3 section__h3--history">Prohibition Era</h3>
           <img src="../assets/img/prohibition.svg" alt="prohibition of using alcohol icon" />
         </header>
-        <p class="section__paragraph">
+        <p class="section__paragraph section__paragraph--history">
           It was in the early 20th Century that the United States government
           decided to outlaw all types of alcohol. This was a hard hit for
           bartenders and mixologists in the history of bartending. Many
@@ -143,7 +143,7 @@
           <h3 class="section__h3 section__h3--history">Modern Times</h3>
           <img src="../assets/img/modern.svg" alt="modern house icon" />
         </header>
-        <p class="section__paragraph">
+        <p class="section__paragraph section__paragraph--history">
           Bartending in modern times has drastically evolved since it first
           originated. Now bartending and mixology is seen as an art. There are
           bartending schools across the world teaching new bartenders this art
@@ -706,38 +706,42 @@
         <header class="section__article-header section__article-header--bars">
           <h3 class="section__h3 section__h3--bars">The Goose</h3>
         </header>
-        <button class="section__button section__button--goose"><img src="../assets/img/arrow.svg"
+        <button id="goose" class="section__button section__button--goose"><img src="../assets/img/arrow.svg"
             class="section__image section__image--bars" alt="arrow down" /></button>
-        <div class="section__tile section__tile--goose">
-          <a class="section__link section__link--goose section__link--bars"
-            href="https://www.facebook.com/thegoosekrakow" target="_blank">See More</a>
+        <div class="section__tile section__tile-content section__tile--goose">
+          <img class="section__image section__image--goose" src="../assets/img/goose.svg" alt="goose icon"/>
+          <p class="section__paragraph section__paragraph--bars section__paragraph--goose">Zabłocie 23/24 Kraków</p>
         </div>
+        <a class="section__link section__link--goose section__link--bars"
+        href="https://www.facebook.com/thegoosekrakow" target="_blank">See More</a>
       </article>
 
       <article class="section__article section__article--bars">
         <header class="section__article-header">
           <h3 class="section__h3 section__h3--bars">Sababa</h3>
         </header>
-        <button class="section__button section__button--sababa"><img src="../assets/img/arrow.svg"
+        <button id="sababa" class="section__button section__button--sababa"><img src="../assets/img/arrow.svg"
             class="section__image section__image--bars" alt="arrow down" /></button>
-        <div class="section__tile section__tile--sababa">
-
+        <div class="section__tile section__tile-content section__tile--sababa">
+          <img class="section__image section__image--sababa" src="../assets/img/sababa.svg" alt="goose icon"/>
+          <p class="section__paragraph section__paragraph--bars section__paragraph--sababa">Szeroka 2 Kraków</p>
+        </div>
           <a class="section__link section__link--sababa section__link--bars"
             href="https://www.facebook.com/SababaCocktails/" target="_blank">See More</a>
-        </div>
       </article>
 
       <article class="section__article section__article--bars">
         <header class="section__article-header">
           <h3 class="section__h3 section__h3--bars">Mercy Brown</h3>
         </header>
-        <button class="section__button section__button--mercy"><img src="../assets/img/arrow.svg"
+        <button id="mercy" class="section__button section__button--mercy"><img src="../assets/img/arrow.svg"
             class="section__image section__image--bars" alt="arrow down" /></button>
-        <div class="section__tile section__tile--mercy">
-
+        <div class="section__tile section__tile-content section__tile--mercy">
+          <img class="section__image section__image--mercy" src="../assets/img/mercy.svg" alt="goose icon"/>
+          <p class="section__paragraph section__paragraph--bars section__paragraph--mercy">Straszewskiego 28 Kraków</p>
+        </div>
           <a class="section__link section__link--mercy section__link--bars" href="http://mercy-brown.pl/"
             target="_blank">See More</a>
-        </div>
       </article>
     </section>
   </main>
@@ -749,10 +753,11 @@
         <a class="footer__socials-link" href="https://www.instagram.com/reiwaii/?hl=pl" target="_blank"><img
             alt="instagram icon" class="footer__image" src="../assets/img/instagram.svg" /></a>
       </div>
+      <h3 class="footer__h3">Knowledge Sources</h3>
       <div class="footer__pages">
-        <a class="footer__pages-link"></a>
-        <a class="footer__pages-link"></a>
-        <a class="footer__pages-link"></a>
+        <a class="footer__pages-link" href="https://www.diffordsguide.com/"></a>
+        <a class="footer__pages-link" href="https://bartender.com/"></a>
+        <a class="footer__pages-link" href="https://craftybartending.com/"></a>
       </div>
 
       <p class="footer__paragraph footer__paragraph--name">Michał Jakóbczyk 2021</p>

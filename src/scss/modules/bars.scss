@@ -4,89 +4,78 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
     }
   }
   &__button {
     background: transparent;
-  }
-  &__tile {
-    height: 40vh;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    font-weight: 500;
-    font-size: 28px;
-    color: $mainColor;
-    position: relative;
+    transition: transform 1s ease-in-out;
     &--goose {
-      &::before {
-        content: "Zabłocie 23/24 Kraków";
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-weight: 500;
-        font-size: 40px;
-        color: $secondaryColor;
-        -webkit-text-stroke: 1px $mainColor;
-        z-index: 0;
-        background: url("/src/assets/img/theGoose.png") center center / cover
-          no-repeat;
-        transform: var(--translate-goose);
-        transition: transform 1s ease-in-out;
-        height: 100%;
-        width: 100%;
-        position: absolute;
+      transform: rotate(0deg);
+      &-rotated {
+        transform: rotate(180deg);
       }
     }
     &--sababa {
-      &::before {
-        content: "Szeroka 2 Kraków";
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-weight: 500;
-        font-size: 40px;
-        color: $secondaryColor;
-        -webkit-text-stroke: 1px $mainColor;
-        z-index: 0;
-        background: url("/src/assets/img/sababa.png") center center / cover
-          no-repeat;
-        transform: var(--translate-sababa);
-        transition: transform 1s ease-in-out;
-        height: 100%;
-        width: 100%;
-        position: absolute;
+      transform: rotate(0deg);
+      &-rotated {
+        transform: rotate(180deg);
       }
     }
     &--mercy {
-      &::before {
-        content: "Straszewskiego 28 Kraków";
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-weight: 500;
-        font-size: 32px;
-        color: $secondaryColor;
-        -webkit-text-stroke: 1px $mainColor;
-        z-index: 0;
-        background: url("/src/assets/img/mercyBrown.png") center center / cover
-          no-repeat;
-        transform: var(--translate-mercy);
-        transition: transform 1s ease-in-out;
-        height: 100%;
-        width: 100%;
-        position: absolute;
+      transform: rotate(0deg);
+      &-rotated {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  &__paragraph {
+    &--bars {
+      font-weight: 500;
+      font-size: 26px;
+    }
+  }
+  &__tile {
+    margin: 48px 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: transform 1.5s ease-in-out, opacity 0.75s 0.5s ease-in-out;
+    &-content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+    &--goose {
+      transform: translateY(-200%);
+      opacity: 0;
+      &-open {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
+    &--sababa {
+      transform: translateY(-200%);
+      opacity: 0;
+      &-open {
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    }
+    &--mercy {
+      transform: translateY(-200%);
+      opacity: 0;
+      &-open {
+        transform: translateY(0%);
+        opacity: 1;
       }
     }
   }
   &__h3 {
     &--bars {
-      width: 100%;
+      width: 100vw;
       text-align: center;
     }
   }
@@ -97,22 +86,51 @@
   }
   &__link {
     &--goose {
-      opacity: var(--opacity-goose);
+      transform: translateY(-400%);
+      opacity: 0;
+      &-open {
+        transform: translateY(0%);
+        opacity: 1;
+      }
     }
     &--sababa {
-      opacity: var(--opacity-sababa);
+      transform: translateY(-400%);
+      opacity: 0;
+      &-open {
+        transform: translateY(0%);
+        opacity: 1;
+      }
     }
     &--mercy {
-      opacity: var(--opacity-mercy);
+      transform: translateY(-400%);
+      opacity: 0;
+      &-open {
+        transform: translateY(0%);
+        opacity: 1;
+      }
     }
     &--bars {
-      z-index: 1;
+      width: max-content;
+      padding: 8px;
       margin: 0 0 32px;
+      border: solid 2px $secondaryColor;
+      border-radius: 16px;
+      font-size: 20px;
       font-weight: 500;
-      font-size: 36px;
-      color: $secondaryColor;
-      -webkit-text-stroke: 1px $mainColor;
-      transition: opacity 0.5s 1s ease-in-out;
+      transition: transform 1.5s ease-in-out, opacity 1s 0.5s ease-in-out;
+      &:hover {
+        color: $mainColor;
+        background-color: $secondaryColor;
+        border: solid 2px $mainColor;
+      }
+    }
+  }
+  &__paragraph {
+    &--bars {
+      font-size: 24px;
+    }
+    &--mercy {
+      font-size: 18px;
     }
   }
 }

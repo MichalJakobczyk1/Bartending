@@ -1,6 +1,6 @@
 .footer {
   &__container {
-    height: 35vh;
+    height: 55vh;
     background: $secondaryColor;
     color: $mainColor;
     display: flex;
@@ -12,13 +12,30 @@
     width: 50%;
     display: flex;
     justify-content: space-evenly;
+    margin: 0 0 16px;
   }
   &__pages {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 0 16px;
+    &-link {
+      width: 30px;
+      height: 30px;
+      background: $mainColor;
+      border-radius: 50%;
+      transition: background 0.5s ease-in-out;
+      &:hover {
+        background: rgb(104, 2, 172);
+      }
+    }
   }
   &__credits {
   }
   &__paragraph {
     font-size: 16px;
+    font-weight: 500;
     margin: 8px 8px;
     text-align: center;
     &--name {
