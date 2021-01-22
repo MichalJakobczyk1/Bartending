@@ -6,6 +6,9 @@
     margin: 24px 8px 40px;
     font-size: 42px;
     animation: headerAppear 1s 0.5s ease-in-out both;
+    @media (min-width: $desktop) {
+      font-size: 64px;
+    }
   }
   &__h2 {
     text-align: center;

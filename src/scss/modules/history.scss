@@ -17,7 +17,6 @@
       background: $secondaryColor;
       color: $mainColor;
       height: 50px;
-      padding: 0 16px;
     }
     &--history {
       grid-area: article;
@@ -67,6 +66,9 @@
     &--history {
       grid-area: image;
     }
+    &--h3 {
+      padding: 0 16px;
+    }
   }
   &__h2 {
     &--history {
@@ -80,6 +82,11 @@
       grid-area: heading;
       text-align: center;
       margin: 16px 0;
+    }
+  }
+  &__h3 {
+    &--history {
+      padding: 0 16px;
     }
   }
 }

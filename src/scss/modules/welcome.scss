@@ -1,15 +1,27 @@
 .section {
+  &--welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: $desktop) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+  }
+  &__image {
     &--welcome {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      width: 100vw;
+      height: 300px;
+      margin: 48px 0;
+      @media (min-width: $desktop) {
+        width: 50vw;
+        height: 500px;
+        margin: 0;
       }
-      &__image {
-        &--welcome {
-            width: 100vw;
-            height: 300px;
-            margin: 48px 0;
-          }
-      }
+    }
+  }
 }
