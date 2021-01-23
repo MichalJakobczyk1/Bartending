@@ -8,6 +8,16 @@
       "link link link link";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 10vh 70vh 1fr 10vh;
+    @media (min-width: $desktop) {
+      display: grid;
+      grid-template-areas:
+        " headerDesktop headerDesktop"
+        "imageDesktop imageDesktop"
+        "articleDesktop articleDesktop"
+        "linkDesktop linkDesktop";
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 10vh 50vh 1fr 10vh;
+    }
   }
   &__article {
     &-header {
@@ -17,9 +27,17 @@
       background: $secondaryColor;
       color: $mainColor;
       height: 50px;
+      @media (min-width: $desktop) {
+        height: 80px;
+      }
     }
     &--history {
       grid-area: article;
+      @media (min-width: $desktop) {
+        grid-area: articleDesktop;
+        border: 2px solid $secondaryColor;
+        margin: 16px;
+      }
     }
   }
   &__container {
@@ -35,6 +53,12 @@
       column-gap: 16px;
       row-gap: 16px;
       margin: 0 16px;
+      @media (min-width: $desktop) {
+        grid-area: linkDesktop;
+        grid-template-rows: 80px 80px;
+        column-gap: 64px;
+        margin: 0 32px;
+      }
       &-link {
         border: solid 2px $secondaryColor;
         border-radius: 8px;
@@ -45,6 +69,11 @@
         font-weight: 500;
         transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out,
           border 0.5s ease-in-out;
+        @media (min-width: $desktop) {
+          font-size: 28px;
+          padding: 12px;
+          border-radius: 16px;
+        }
         &-1 {
           grid-area: link1;
         }
@@ -65,9 +94,18 @@
   &__image {
     &--history {
       grid-area: image;
+      @media (min-width: $desktop) {
+        grid-area: imageDesktop;
+        height: 50vh;
+        margin: 0 auto;
+      }
     }
     &--h3 {
       padding: 0 16px;
+      @media (min-width: $desktop) {
+        padding: 0 32px;
+        height: 60px;
+      }
     }
   }
   &__h2 {
@@ -77,14 +115,23 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      @media (min-width: $desktop) {
+        grid-area: headerDesktop;
+      }
+    }
+  }
+  &__h3 {
+    @media (min-width: $desktop) {
+      font-size: 32px;
     }
     &--link {
       grid-area: heading;
       text-align: center;
       margin: 16px 0;
+      @media (min-width: $desktop) {
+        font-size: 32px;
+      }
     }
-  }
-  &__h3 {
     &--history {
       padding: 0 16px;
     }
