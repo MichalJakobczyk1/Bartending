@@ -1,9 +1,13 @@
 .section {
-  &-tile {
-    margin: 32px 0;
-  }
   &--introduction {
     text-align: center;
+    @media (min-width: $bigDesktop) {
+      margin: 256px 0 0 0;
+    }
+  }
+  &__article {
+    &--introduction {
+    }
   }
   &__h3 {
     &--link {
@@ -12,23 +16,12 @@
       margin: 16px 0;
     }
     &--introduction {
+      margin: 24px auto;
       color: $mainColor;
       background-color: $secondaryColor;
       width: max-content;
       padding: 8px;
       border-radius: 15px;
-    }
-    &--introduction {
-      color: $mainColor;
-      background-color: $secondaryColor;
-      width: max-content;
-      padding: 8px;
-      border-radius: 15px;
-    }
-    &-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
     }
   }
   &__paragraph {
@@ -36,6 +29,9 @@
       margin: 0 16px;
       text-align: justify;
       font-size: 18px;
+      @media (min-width: $desktop) {
+        font-size: 24px;
+      }
       &-item {
         margin: 8px 0;
       }

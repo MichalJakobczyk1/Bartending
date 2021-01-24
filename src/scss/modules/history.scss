@@ -1,22 +1,17 @@
 .section {
   &--history {
-    display: grid;
-    grid-template-areas:
-      "header header header header"
-      "image image image image"
-      "article article article article"
-      "link link link link";
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 10vh 70vh 1fr 10vh;
-    @media (min-width: $desktop) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (min-width: $bigDesktop) {
       display: grid;
       grid-template-areas:
-        " headerDesktop headerDesktop"
-        "imageDesktop imageDesktop"
-        "articleDesktop articleDesktop"
-        "linkDesktop linkDesktop";
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 10vh 50vh 1fr 10vh;
+        "header header"
+        "image link"
+        "article article";
+      grid-template-columns: 40% 60%;
+      grid-template-rows: 10% 40% 1fr;
     }
   }
   &__article {
@@ -32,18 +27,20 @@
       }
     }
     &--history {
-      grid-area: article;
-      @media (min-width: $desktop) {
-        grid-area: articleDesktop;
-        border: 2px solid $secondaryColor;
-        margin: 16px;
+      @media (min-width: $bigDesktop) {
+        width: 50%;
       }
     }
   }
   &__container {
+    &-article {
+      grid-area: article;
+      display: flex;
+      flex-wrap: wrap;
+    }
     &--history {
       grid-area: link;
-      margin: 32px 0;
+      margin: 32px 16px;
       display: grid;
       grid-template-areas:
         "heading heading heading"
@@ -52,12 +49,10 @@
       grid-template-rows: 40px 40px;
       column-gap: 16px;
       row-gap: 16px;
-      margin: 0 16px;
       @media (min-width: $desktop) {
-        grid-area: linkDesktop;
         grid-template-rows: 80px 80px;
-        column-gap: 64px;
-        margin: 0 32px;
+        column-gap: 32px;
+        margin: 32px 64px;
       }
       &-link {
         border: solid 2px $secondaryColor;
@@ -70,9 +65,12 @@
         transition: color 0.5s ease-in-out, background-color 0.5s ease-in-out,
           border 0.5s ease-in-out;
         @media (min-width: $desktop) {
-          font-size: 28px;
-          padding: 12px;
+          font-size: 26px;
           border-radius: 16px;
+          padding: 16px;
+        }
+        @media (min-width: $bigDesktop) {
+          padding: 24px;
         }
         &-1 {
           grid-area: link1;
@@ -94,10 +92,16 @@
   &__image {
     &--history {
       grid-area: image;
+      margin: 0 0 16px 0;
+      @media (min-width: $tablet) {
+        max-height: 60vh;
+      }
       @media (min-width: $desktop) {
-        grid-area: imageDesktop;
-        height: 50vh;
-        margin: 0 auto;
+        margin: 0 0 32px 0;
+      }
+      @media (min-width: $bigDesktop) {
+        grid-area: image;
+        margin: 0;
       }
     }
     &--h3 {
@@ -115,9 +119,6 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      @media (min-width: $desktop) {
-        grid-area: headerDesktop;
-      }
     }
   }
   &__h3 {
