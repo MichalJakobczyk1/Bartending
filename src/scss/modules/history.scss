@@ -23,7 +23,7 @@
       color: $mainColor;
       height: 50px;
       @media (min-width: $desktop) {
-        height: 80px;
+        height: 65px;
       }
     }
     &--history {
@@ -68,9 +68,6 @@
           font-size: 26px;
           border-radius: 16px;
           padding: 16px;
-        }
-        @media (min-width: $bigDesktop) {
-          padding: 24px;
         }
         &-1 {
           grid-area: link1;
@@ -131,6 +128,9 @@
       margin: 16px 0;
       @media (min-width: $desktop) {
         font-size: 32px;
+      }
+      @media (min-width: $bigDesktop) {
+        font-size: 48px;
       }
     }
     &--history {

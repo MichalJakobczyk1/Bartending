@@ -3,19 +3,29 @@
     text-align: center;
     @media (min-width: $bigDesktop) {
       margin: 256px 0 0 0;
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "article article";
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 5% 1fr;
     }
   }
   &__article {
     &--introduction {
+      @media (min-width: $bigDesktop) {
+        grid-area: article;
+        width: 50%;
+      }
     }
   }
   &__h3 {
     &--link {
-      grid-area: heading;
       text-align: center;
       margin: 16px 0;
     }
     &--introduction {
+      grid-area: header;
       margin: 24px auto;
       color: $mainColor;
       background-color: $secondaryColor;
@@ -25,12 +35,20 @@
     }
   }
   &__paragraph {
+    &--introduction {
+      @media (min-width: $bigDesktop) {
+        text-align: center;
+      }
+    }
     &-list {
       margin: 0 16px;
       text-align: justify;
       font-size: 18px;
       @media (min-width: $desktop) {
         font-size: 24px;
+      }
+      @media (min-width: $bigDesktop) {
+        text-align: center;
       }
       &-item {
         margin: 8px 0;
@@ -40,6 +58,13 @@
   &__image {
     &--introduction {
       margin: 24px 0 0;
+    }
+  }
+  &__h2 {
+    &--introduction {
+      @media (min-width: $bigDesktop) {
+        grid-area: header;
+      }
     }
   }
 }
