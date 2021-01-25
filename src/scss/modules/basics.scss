@@ -6,32 +6,35 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      @media (min-width: $bigDesktop) {
+      }
     }
     &--wine {
       margin: 96px 0;
     }
   }
-  &__article {
-    &-bottom {
+  &__container {
+    &--basics {
       display: grid;
       grid-template-areas: "cocktail text";
       grid-template-columns: 50% 50%;
       grid-template-rows: 50vh;
-      &-text {
-        grid-area: text;
-        display: flex;
-        flex-direction: row;
-      }
+    }
+    &-text {
+      grid-area: text;
+      display: flex;
+      flex-direction: column;
+    }
 
-      &-list {
-        text-align: center;
-      }
-      &-paragraph {
-        text-align: justify;
-        margin: 16px 16px 8px 0;
-      }
+    &-list {
+      text-align: center;
+    }
+    &-paragraph {
+      text-align: justify;
+      margin: 16px 16px 8px 0;
     }
   }
+
   &__image {
     &--cocktail {
       grid-area: cocktail;
