@@ -1,10 +1,30 @@
 .section {
+  &--bars {
+    @media (min-width: $bigDesktop) {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  }
   &__article {
     &--bars {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      @media (min-width: $bigDesktop) {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+    }
+    &-header {
+      &--bars {
+        @media (min-width: $bigDesktop) {
+          width: 200px;
+          height: 200px;
+        }
+      }
     }
   }
   &__button {
@@ -12,18 +32,38 @@
     transition: transform 1s ease-in-out;
     &--goose {
       transform: rotate(0deg);
+      @media (min-width: $bigDesktop) {
+        transform: rotate(-90deg);
+      }
       &-rotated {
         transform: rotate(180deg);
+        @media (min-width: $bigDesktop) {
+          transform: rotate(90deg);
+        }
       }
     }
     &--sababa {
+      transform: rotate(0deg);
+      @media (min-width: $bigDesktop) {
+        transform: rotate(-90deg);
+      }
       &-rotated {
         transform: rotate(180deg);
+        @media (min-width: $bigDesktop) {
+          transform: rotate(90deg);
+        }
       }
     }
     &--mercy {
+      transform: rotate(0deg);
+      @media (min-width: $bigDesktop) {
+        transform: rotate(-90deg);
+      }
       &-rotated {
         transform: rotate(180deg);
+        @media (min-width: $bigDesktop) {
+          transform: rotate(90deg);
+        }
       }
     }
   }
@@ -41,33 +81,58 @@
     align-items: center;
     position: relative;
     transition: transform 1.5s ease-in-out, opacity 0.75s 0.5s ease-in-out;
+    @media (min-width: $bigDesktop) {
+      transition: transform 3s ease-in-out, opacity 1s 1.5s ease-in-out;
+    }
     &-content {
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
+      @media (min-width: $bigDesktop) {
+        width: 40%;
+        justify-content: space-around;
+      }
     }
     &--goose {
       transform: translateY(-200%);
       opacity: 0;
+      @media (min-width: $bigDesktop) {
+        transform: translateX(-200%);
+      }
       &-open {
         transform: translateY(0%);
         opacity: 1;
+        @media (min-width: $bigDesktop) {
+          transform: translateX(0%);
+        }
       }
     }
     &--sababa {
       transform: translateY(-200%);
       opacity: 0;
+      @media (min-width: $bigDesktop) {
+        transform: translateX(-200%);
+      }
       &-open {
         transform: translateY(0%);
         opacity: 1;
+        @media (min-width: $bigDesktop) {
+          transform: translateX(0%);
+        }
       }
     }
     &--mercy {
       transform: translateY(-200%);
       opacity: 0;
+      @media (min-width: $bigDesktop) {
+        transform: translateX(-200%);
+      }
       &-open {
         transform: translateY(0%);
         opacity: 1;
+        @media (min-width: $bigDesktop) {
+          transform: translateX(0%);
+        }
       }
     }
   }
@@ -75,6 +140,9 @@
     &--bars {
       width: 100vw;
       text-align: center;
+      @media (min-width: $bigDesktop) {
+        width: 100%;
+      }
     }
   }
   &__h2 {
@@ -116,6 +184,9 @@
       font-size: 20px;
       font-weight: 500;
       transition: transform 1.5s ease-in-out, opacity 1s 0.5s ease-in-out;
+      @media (min-width: $bigDesktop) {
+        transition: opacity 1s 2s ease-in-out;
+      }
       &:hover {
         color: $mainColor;
         background-color: $secondaryColor;
