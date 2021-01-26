@@ -7,6 +7,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (min-width: $bigDesktop) {
+      height: 75vh;
+    }
   }
   &__socials {
     width: 50%;
@@ -26,6 +29,10 @@
       background: $mainColor;
       border-radius: 50%;
       transition: background 0.5s ease-in-out;
+      @media (min-width: $bigDesktop) {
+        width: 60px;
+        height: 60px;
+      }
       &:hover {
         background: rgb(104, 2, 172);
       }
@@ -38,11 +45,27 @@
     font-weight: 500;
     margin: 8px 8px;
     text-align: center;
+    @media (min-width: $bigDesktop) {
+      font-size: 24px;
+    }
     &--name {
       font-size: 24px;
+      @media (min-width: $bigDesktop) {
+        font-size: 40px;
+      }
     }
   }
   &__link {
     text-decoration: underline;
+  }
+  &__image {
+    @media (min-width: $bigDesktop) {
+      height: 112px;
+    }
+  }
+  &__h3 {
+    @media (min-width: $bigDesktop) {
+      font-size: 48px;
+    }
   }
 }
