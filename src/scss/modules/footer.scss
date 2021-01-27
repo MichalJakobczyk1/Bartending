@@ -30,8 +30,8 @@
       border-radius: 50%;
       transition: background 0.5s ease-in-out;
       @media (min-width: $bigDesktop) {
-        width: 60px;
-        height: 60px;
+        width: 45px;
+        height: 45px;
       }
       &:hover {
         background: rgb(104, 2, 172);
@@ -46,12 +46,12 @@
     margin: 8px 8px;
     text-align: center;
     @media (min-width: $bigDesktop) {
-      font-size: 24px;
+      font-size: 22px;
     }
     &--name {
       font-size: 24px;
       @media (min-width: $bigDesktop) {
-        font-size: 40px;
+        font-size: 28px;
       }
     }
   }
@@ -60,12 +60,12 @@
   }
   &__image {
     @media (min-width: $bigDesktop) {
-      height: 112px;
+      height: 96px;
     }
   }
   &__h3 {
     @media (min-width: $bigDesktop) {
-      font-size: 48px;
+      font-size: 36px;
     }
   }
 }

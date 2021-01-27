@@ -11,6 +11,21 @@ window.addEventListener("load", (event) => {
   document.body.classList.remove("body--preload");
 });
 
+const sections = document.querySelectorAll(".section--js");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.intersectionRatio > 0) {
+      entry.target.style.animation = `sectionAppear 1s 0.5s both ease-in-out`;
+    } else {
+      entry.target.style.animation = "none";
+    }
+  });
+});
+sections.forEach((section) => {
+  observer.observe(section);
+});
+
 const buttonMenu = document.querySelector(".navigation__menu");
 const menuList = document.querySelector(".navigation__list--js");
 
