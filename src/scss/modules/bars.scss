@@ -76,7 +76,7 @@
     position: relative;
     transition: transform 1.5s ease-in-out, opacity 0.75s 0.5s ease-in-out;
     @media (min-width: $bigDesktop) {
-      transition: transform 3s ease-in-out, opacity 1s 1.5s ease-in-out;
+      transition: transform 2s ease-in-out, opacity 1s 1.5s ease-in-out;
     }
     &-content {
       display: flex;
@@ -179,7 +179,7 @@
       font-weight: 500;
       transition: transform 1.5s ease-in-out, opacity 1s 0.5s ease-in-out;
       @media (min-width: $bigDesktop) {
-        transition: opacity 1s 2s ease-in-out;
+        transition: opacity 1s 1.5s ease-in-out;
       }
       &:hover {
         color: $mainColor;

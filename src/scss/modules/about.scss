@@ -1,0 +1,47 @@
+.section {
+  &--about {
+    @media (min-width: $desktop) {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "image article";
+      grid-template-columns: 60% 40%;
+      grid-template-rows: 10vh 1fr;
+    }
+  }
+  &__h2 {
+    &--about {
+      @media (min-width: $desktop) {
+        grid-area: header;
+      }
+    }
+  }
+  &__hero {
+    width: 100%;
+    min-height: 50vh;
+    background: url("/src/assets/img/hero.png") center center / contain
+      no-repeat;
+    @media (min-width: $desktop) {
+      grid-area: image;
+      min-height: 80vh;
+    }
+  }
+  &__article {
+    &--about {
+      @media (min-width: $desktop) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  &__paragraph {
+    &--about {
+      font-size: 24px;
+      text-align: center;
+      @media (min-width: $desktop) {
+        font-size: 36px;
+      }
+    }
+  }
+}
