@@ -1,4 +1,4 @@
-![cover](https://MichalJakobczyk1.github.io/cv/cv.png)
+![cover](https://MichalJakobczyk1.github.io/bartending/cover.png)
 
 # Hello Bartender!
 
