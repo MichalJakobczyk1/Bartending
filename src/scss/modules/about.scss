@@ -16,14 +16,16 @@
       }
     }
   }
-  &__hero {
-    width: 100%;
-    min-height: 50vh;
-    background: url("/src/assets/img/hero.png") center center / contain
-      no-repeat;
-    @media (min-width: $desktop) {
-      grid-area: image;
-      min-height: 80vh;
+  &__image {
+    &--about {
+      width: 100%;
+      min-height: 50vh;
+      background: url("/src/assets/img/hero.png") center center / contain
+        no-repeat;
+      @media (min-width: $desktop) {
+        grid-area: image;
+        min-height: 80vh;
+      }
     }
   }
   &__article {

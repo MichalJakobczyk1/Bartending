@@ -23,18 +23,10 @@
     justify-content: space-evenly;
     align-items: center;
     margin: 0 0 16px;
-    &-link {
-      width: 30px;
-      height: 30px;
-      background: $mainColor;
-      border-radius: 50%;
-      transition: background 0.5s ease-in-out;
+    &-image {
+      height: 45px;
       @media (min-width: $bigDesktop) {
-        width: 45px;
-        height: 45px;
-      }
-      &:hover {
-        background: rgb(104, 2, 172);
+        height: 96px;
       }
     }
   }
