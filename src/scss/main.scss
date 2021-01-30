@@ -44,8 +44,7 @@ button {
   -moz-appearance: none;
 }
 button:focus {
-  outline: none;
-  outline-offset: none;
+  outline: $mainColor;
 }
 button:active {
   transform: scale(0.99);

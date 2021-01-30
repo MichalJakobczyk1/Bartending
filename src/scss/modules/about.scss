@@ -10,6 +10,7 @@
     }
   }
   &__h2 {
+    padding: 12px 0;
     &--about {
       @media (min-width: $desktop) {
         grid-area: header;
@@ -26,21 +27,15 @@
       }
     }
   }
-  &__article {
-    &--about {
-      @media (min-width: $desktop) {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-  }
   &__paragraph {
     &--about {
       font-size: 24px;
-
+      padding: 12px 24px;
       @media (min-width: $desktop) {
         font-size: 36px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
   }

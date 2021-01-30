@@ -16,6 +16,7 @@
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        margin: 8px 0;
       }
     }
     &-header {
@@ -75,9 +76,7 @@
     align-items: center;
     position: relative;
     transition: transform 1.5s ease-in-out, opacity 0.75s 0.5s ease-in-out;
-    @media (min-width: $bigDesktop) {
-      transition: transform 2s ease-in-out, opacity 1s 1.5s ease-in-out;
-    }
+
     &-content {
       display: flex;
       flex-direction: row;
@@ -130,6 +129,14 @@
       }
     }
   }
+  &__container {
+    &--bars {
+      margin: 0 0 32px 0;
+      @media (min-width: $bigDesktop) {
+        margin: 0;
+      }
+    }
+  }
   &__h3 {
     &--bars {
       width: 100vw;
@@ -179,7 +186,7 @@
       font-weight: 500;
       transition: transform 1.5s ease-in-out, opacity 1s 0.5s ease-in-out;
       @media (min-width: $bigDesktop) {
-        transition: opacity 1s 1.5s ease-in-out;
+        transition: opacity 1s 0.75s ease-in-out;
       }
       &:hover {
         color: $mainColor;

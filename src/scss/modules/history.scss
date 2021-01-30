@@ -11,7 +11,7 @@
         "image link"
         "article article";
       grid-template-columns: 40% 60%;
-      grid-template-rows: 10% 40% 1fr;
+      grid-template-rows: 5% 30% 1fr;
     }
   }
   &__article {
@@ -37,6 +37,13 @@
       grid-area: article;
       display: flex;
       flex-wrap: wrap;
+      &--history {
+        max-width: 1024px;
+        margin: 0 auto;
+        @media (min-width: $desktop) {
+          border: solid $secondaryColor 3px;
+        }
+      }
     }
     &--history {
       grid-area: link;
