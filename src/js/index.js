@@ -16,9 +16,7 @@ const sections = document.querySelectorAll(".section--js");
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
     if (entry.intersectionRatio > 0) {
-      entry.target.style.animation = `sectionAppear 1s 0.5s both ease-in-out`;
-    } else {
-      entry.target.style.animation = "none";
+      entry.target.style.animation = `sectionAppear 0.5s 0.5s forwards ease-in-out`;
     }
   });
 });

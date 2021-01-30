@@ -59,8 +59,8 @@
       margin: 16px 16px 8px 0;
       @media (min-width: $bigDesktop) {
         grid-area: manual;
-        text-align: center;
         font-size: 20px;
+        padding: 4px 16px;
       }
     }
   }
@@ -94,7 +94,7 @@
     &--basics {
       @media (min-width: $bigDesktop) {
         grid-area: paragraph;
-        text-align: center;
+        padding: 4px 24px;
       }
     }
   }

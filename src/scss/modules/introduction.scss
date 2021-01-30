@@ -37,7 +37,7 @@
   &__paragraph {
     &--introduction {
       @media (min-width: $bigDesktop) {
-        text-align: center;
+        padding: 8px 16px;
       }
     }
     &-list {

@@ -20,8 +20,6 @@
     &--about {
       width: 100%;
       min-height: 50vh;
-      background: url("/src/assets/img/hero.png") center center / contain
-        no-repeat;
       @media (min-width: $desktop) {
         grid-area: image;
         min-height: 80vh;
@@ -40,7 +38,7 @@
   &__paragraph {
     &--about {
       font-size: 24px;
-      text-align: center;
+
       @media (min-width: $desktop) {
         font-size: 36px;
       }

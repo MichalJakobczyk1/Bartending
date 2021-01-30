@@ -1,8 +1,9 @@
 .section {
   min-height: 100vh;
   margin: 128px 0;
-  padding-top: 100px;
+  padding-top: 150px;
   opacity: 0;
+  transform: translateY(50px);
   &__h1 {
     text-align: center;
     margin: 24px 8px 40px;

@@ -137,4 +137,11 @@
       padding: 0 16px;
     }
   }
+  &__paragraph {
+    &--history {
+      @media (min-width: $bigDesktop) {
+        padding: 0 6px;
+      }
+    }
+  }
 }
